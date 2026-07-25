@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LackCityClient - A Different Kind of Launcher</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/Main.png" alt="LackCityClient" class="logo-img">
+                <span class="logo-text">LackCity<span class="accent">Client</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="#versions">Versions</a>
+                <a href="#credits">Credits</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Built Different.</h1>
+                <p class="hero-subtitle">A lightweight Minecraft launcher with auto Java management, Fabric mod support, and a clean interface. No bloat, no nonsense.</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">Download Launcher</a>
+                    <a href="#features" class="btn btn-ghost">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">6+</span>
+                        <span class="stat-label">MC Versions</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">Auto</span>
+                        <span class="stat-label">Java Install</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">Fabric</span>
+                        <span class="stat-label">Mod Loader</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="launcher-preview">
+                    <div class="preview-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="preview-title">LackCityClient</span>
+                    </div>
+                    <div class="preview-body">
+                        <div class="preview-sidebar">
+                            <div class="preview-logo"></div>
+                            <div class="preview-nav-item active"></div>
+                            <div class="preview-nav-item"></div>
+                            <div class="preview-nav-item"></div>
+                            <div class="preview-nav-item"></div>
+                            <div class="preview-nav-item"></div>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-card tall"></div>
+                            <div class="preview-row">
+                                <div class="preview-card"></div>
+                                <div class="preview-card"></div>
+                            </div>
+                            <div class="preview-play-btn"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Makes It Different</h2>
+                <p>Everything you need to play Minecraft, nothing you don't.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">JV</div>
+                    <h3>Auto Java Management</h3>
+                    <p>LackCityClient detects which Java version your Minecraft build needs and downloads it automatically. Java 8 for older versions, Java 17 for 1.17+, Java 21 for 1.20.5+, and Java 25 for the latest releases. No manual setup required.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">VS</div>
+                    <h3>Full Version Support</h3>
+                    <p>Every Minecraft release and snapshot, from legacy versions all the way through the new year-based format. Whether you are playing 1.8.9 or the latest 26.2 drop, it is covered.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">FL</div>
+                    <h3>Fabric Mod Loader</h3>
+                    <p>One-click Fabric installation with automatic library merging. Install mods from the Modrinth cloud browser or drop your own into the mods folder. Toggle, remove, and manage them from the built-in mods page.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">MA</div>
+                    <h3>Multi-Account Support</h3>
+                    <p>Microsoft accounts, offline mode, and third-party auth servers. Switch between accounts instantly. Skin UUID and skin server support for customized profiles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">LV</div>
+                    <h3>Live Log Viewer</h3>
+                    <p>Full session logging with search, filtering by level, and export. Every stdout and stderr line from the game process is captured and displayed in real time. Debug crashes without leaving the launcher.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">CP</div>
+                    <h3>Customizable Profiles</h3>
+                    <p>Upload a profile picture, set your skin, and personalize your launcher experience. Clean sidebar navigation with animated transitions between pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Version Support -->
+    <section class="versions" id="versions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Version Compatibility</h2>
+                <p>Automatic Java version detection for every Minecraft release.</p>
+            </div>
+            <div class="version-table-wrap">
+                <table class="version-table">
+                    <thead>
+                        <tr>
+                            <th>Minecraft Versions</th>
+                            <th>Required Java</th>
+                            <th>Loader Support</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>26.2 and newer</td>
+                            <td><span class="badge purple">Java 25</span></td>
+                            <td>Fabric, Vanilla</td>
+                        </tr>
+                        <tr>
+                            <td>1.20.5 - 1.21.x</td>
+                            <td><span class="badge purple">Java 21</span></td>
+                            <td>Fabric, Vanilla</td>
+                        </tr>
+                        <tr>
+                            <td>1.17 - 1.20.4</td>
+                            <td><span class="badge blue">Java 17</span></td>
+                            <td>Fabric, Vanilla</td>
+                        </tr>
+                        <tr>
+                            <td>1.13 - 1.16.x</td>
+                            <td><span class="badge blue">Java 8</span></td>
+                            <td>Fabric, Vanilla</td>
+                        </tr>
+                        <tr>
+                            <td>1.12 and older</td>
+                            <td><span class="badge blue">Java 8</span></td>
+                            <td>Vanilla</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-info">
+                    <h2>Download LackCityClient</h2>
+                    <p>Free, open-source, and built with care. Works on Windows 10 and above.</p>
+                    <ul class="download-checklist">
+                        <li>Auto-downloads the correct Java version</li>
+                        <li>Built-in Fabric mod loader</li>
+                        <li>Modrinth cloud browser</li>
+                        <li>Microsoft and offline account support</li>
+                        <li>Live log viewer with crash diagnostics</li>
+                    </ul>
+                    <div class="download-actions">
+                        <a href="#" class="btn btn-primary btn-lg">Download v1.0.0</a>
+                        <span class="download-note">Requires .NET 8 Desktop Runtime</span>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="requirements">
+                        <h4>System Requirements</h4>
+                        <div class="req-item">
+                            <span class="req-label">OS</span>
+                            <span class="req-value">Windows 10+</span>
+                        </div>
+                        <div class="req-item">
+                            <span class="req-label">Runtime</span>
+                            <span class="req-value">.NET 8</span>
+                        </div>
+                        <div class="req-item">
+                            <span class="req-label">RAM</span>
+                            <span class="req-value">2 GB minimum</span>
+                        </div>
+                        <div class="req-item">
+                            <span class="req-label">Disk</span>
+                            <span class="req-value">200 MB + MC files</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credits -->
+    <section class="credits" id="credits">
+        <div class="container">
+            <div class="section-header">
+                <h2>Credits</h2>
+                <p>The person and tools behind LackCityClient.</p>
+            </div>
+            <div class="credits-grid">
+                <div class="credit-card main">
+                    <img src="assets/bacon.jpg" alt="BaconRoaster23" class="credit-avatar-img">
+                    <h3>BaconRoaster23</h3>
+                    <p>Creator and lead developer. Built the entire launcher from scratch -- UI, Java management, version handling, Fabric integration, and the mod system.</p>
+                </div>
+                <div class="credit-card">
+                    <h4>Built With</h4>
+                    <ul class="tech-list">
+                        <li><strong>.NET 8 / WPF</strong> - Runtime framework</li>
+                        <li><strong>CmlLib.Core</strong> - Minecraft protocol library</li>
+                        <li><strong>Fabric Loader</strong> - Mod loader support</li>
+                        <li><strong>Modrinth API</strong> - Cloud mod browser</li>
+                        <li><strong>Adoptium</strong> - Java distribution</li>
+                    </ul>
+                </div>
+                <div class="credit-card">
+                    <h4>Thank You</h4>
+                    <p>To everyone using LackCityClient. Your support, feedback, and kind words keep this project going. Every download matters and every suggestion is heard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">LackCity<span class="accent">Client</span></span>
+                <p>Free and open-source. Not affiliated with Mojang or Microsoft.</p>
+            </div>
+            <div class="footer-right">
+                <p>Made by BaconRoaster23</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
